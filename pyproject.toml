@@ -1,0 +1,20 @@
+[project]
+name = "backend-takehome-problem"
+version = "0.1.0"
+description = "A command line tool to fetch PubMed papers based on provided query"
+authors = [
+    {name = "Akanksha",email = "akankshadeshpande678@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests (>=2.32.3,<3.0.0)"
+]
+
+[tool.poetry]
+packages = [{include = "pubmed_fetcher", from = "src"}]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
